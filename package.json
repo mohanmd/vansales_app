@@ -9,6 +9,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.5.1",
@@ -22,6 +24,7 @@
     "react": "17.0.1",
     "react-dom": "^17.0.1",
     "react-native": "0.64.3",
+    "react-native-maps": "^0.30.1",
     "react-native-web": "^0.17.1",
     "react-navigation": "^4.4.4",
     "yup": "^0.32.11"

@@ -13,7 +13,7 @@ const useStyles = makeStyles({
       color: "#fff"
     }
 });
-export default function Home() {
+export default function Home({navigation}) {
 const classes = useStyles();
 
   return (
@@ -89,7 +89,7 @@ const classes = useStyles();
                                         <View style={homepage_style.menu_text}><Text style={homepage_style.menu_word}>Route<br/>Management</Text></View>
                                     </View>
                                 </View>
-                                <View style={homepage_style.tileView}>
+                                <View style={homepage_style.tileView}  onClick={() => navigation.navigate('Details') }>
                                     <View style={homepage_style.menu_col}>
                                         <View style={homepage_style.menu_icon}>
                                             <Image source={require('../../assets/images/icons/delivery.png')} style={{width: 70, height:40}} />
@@ -97,7 +97,7 @@ const classes = useStyles();
                                         <View style={homepage_style.menu_text}><Text style={homepage_style.menu_word}>Delivery<br/>Invoice</Text></View>
                                     </View>
                                 </View>
-                                <View style={homepage_style.tileView}>
+                                <View style={homepage_style.tileView} onClick={() => navigation.navigate('Orderlist') } >
                                     <View style={homepage_style.menu_col}>
                                         <View style={homepage_style.menu_icon}>
                                             <Image source={require('../../assets/images/icons/spotsale.png')} style={{width: 70, height:40}} />
@@ -106,8 +106,8 @@ const classes = useStyles();
                                     </View>
                                 </View>
                             </View>
-                            <View style={homepage_style.menu}>
-                                <View style={homepage_style.tileView}>
+                            <View style={homepage_style.menu}  >
+                                <View style={homepage_style.tileView} onClick={() => navigation.navigate('CollectionList') }>
                                     <View style={homepage_style.menu_col}>
                                         <View style={homepage_style.menu_icon}>
                                             <Image source={require('../../assets/images/icons/collection_management.png')} style={{width: 70, height:40}} />
@@ -115,7 +115,7 @@ const classes = useStyles();
                                         <View style={homepage_style.menu_text}><Text style={homepage_style.menu_word}>Collection<br/>Management</Text></View>
                                     </View>
                                 </View>
-                                <View style={homepage_style.tileView}>
+                                <View style={homepage_style.tileView}  onClick={() => navigation.navigate('DeliveryDetail') }>
                                     <View style={homepage_style.menu_col}>
                                         <View style={homepage_style.menu_icon}>
                                             <Image source={require('../../assets/images/icons/delivery_planing.png')} style={{width: 70, height:40}} />

@@ -23,6 +23,7 @@ export default StyleSheet.create({
     container :{
         flex: 1,
         margin: 'auto',
+        maxWidth : '1100px',
         width: '100%',
         height: '100%',
         paddingLeft: '25px',

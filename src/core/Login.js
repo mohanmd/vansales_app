@@ -46,7 +46,6 @@ typesetting, remaining essentially unchanged. </Text>
                     <View style={styles.fieldCol}>
                         <Text style={styles.loginTitle}>Login</Text>
                         <TextField
-                          color="secondary"
                           id="username"
                           label="Username"
                           multiline
@@ -64,8 +63,8 @@ typesetting, remaining essentially unchanged. </Text>
                     </View>
                       
                     <View style={styles.loginButtons}>
-                      <Button  onClick={() => navigation.navigate('Home') }  style = {{color:'#fbac00'}}>Login</Button>
-                      <Button style = {{color:'#fbac00'}}>Signup</Button>
+                      <Button  onClick={() => navigation.navigate('Home') }  style = {{color:'#fbac00', height : '40px'}}>Login</Button>
+                      <Button style = {{color:'#fbac00', height : '40px'}}>Signup</Button>
                     </View>
                   </View>
                 </View>
@@ -103,11 +102,13 @@ const styles = StyleSheet.create({
     rightCol : {
       width : '50%',
       height : '100%',
-      padding : '40px'
+      padding : '40px',
+      flex : '1',
+      alignItems : 'center',
+      justifyContent : 'center'
     },
     innerBox :{
       backgroundColor : '#f5f5f5',
-      height: '100%',
       padding : '20px',
       borderRadius : '13px',
       shadowColor: "#000",
@@ -118,6 +119,7 @@ const styles = StyleSheet.create({
       shadowOpacity: 0.22,
       shadowRadius: 2.22,
       elevation: 3,
+      width : '100%'
     },
     darkbox : {
       backgroundColor : '#444',
@@ -125,11 +127,9 @@ const styles = StyleSheet.create({
       borderTopLeftRadius : '20px',
       borderBottomRightRadius : '20px',
       padding : '30px',
-      justifyContent :'space-between'
+      justifyContent :'space-between',
+      flexDirection : 'column'
     },  
-    fieldCol : {
-
-    },
     loginTitle : {
       fontSize : '30px',
       color :'#fff'
@@ -141,7 +141,8 @@ const styles = StyleSheet.create({
       justifyContent : 'center',
       color : '#f00',
       height : '50px',
-      paddingTop : '20px'
+      paddingTop : '20px',
+      alignItems : 'center'
     },  
     heading : {
       textAlign : 'center',

@@ -15,11 +15,10 @@ export default StyleSheet.create({
     },
     tileView : {
         flex : 3,
-        // height: '157px'
     },
     nameBox : {
         textAlign : 'right',
-        // paddingBottom : '10px'
+        paddingRight : '25px'
     },  
     nameTitle : {
         color : '#c6771c',
@@ -40,7 +39,10 @@ export default StyleSheet.create({
         flex:3
     },
     snd_col:{
-        flex:6
+        flex:6,
+        maxWidth : '600px',
+        paddingLeft : '30px',
+        paddingRight : '30px',
     },
     menu:{
         flex: 1,       

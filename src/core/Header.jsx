@@ -20,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
 }));
-export default function Header() {
+export default function Header({navigation}) {
   const classes = useStyles();
 
   return (
     <View style={common_style.navbar}>
       <View style={common_style.navbarInner}>
-          <Image source={require('../../assets/images/van_logo.png')} style={{width: 120, height:50}} />
+          <Image onClick={() => navigation.navigate('Home')} source={require('../../assets/images/van_logo.png')} style={{width: 120, height:50}} />
           <View style={common_style.headerMenu}>
             <Text style={common_style.headerLink}>Home</Text>
             <Text style={common_style.headerLink}>Settings</Text>
